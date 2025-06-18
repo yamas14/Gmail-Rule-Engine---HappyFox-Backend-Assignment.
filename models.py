@@ -6,6 +6,7 @@ from config import DATABASE_URL
 Base = declarative_base() 
 
 class Email(Base):
+    # Composite index for efficient email searching
     __tablename__ = 'emails'
     
     id = Column(Integer, primary_key=True)
