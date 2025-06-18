@@ -15,7 +15,7 @@ class RuleProcessor:
             data = json.load(f)
             self.rules = data['rules']
     
-    def _compile_rules(self):
+    def _compile_rules(self): #keywords/conditions/predicates for processing rules.json
         for rule in self.rules:
             for condition in rule['conditions']:
                 if condition['predicate'] == 'contains' and condition['field'] != 'received_date':
@@ -30,7 +30,7 @@ class RuleProcessor:
         predicate_score = 1.5 if rule['predicate'] == 'all' else 1
         return base_score * predicate_score
     
-    def process_email(self, email_data):
+    def process_email(self, email_data): # Process rules concurrently for better performance
         actions = []
         with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
             future_to_rule = {executor.submit(self._evaluate_rule, rule, email_data): rule 
