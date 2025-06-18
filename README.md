@@ -114,6 +114,8 @@ mark_as_read, mark_as_unread, move_message
 ```bash
 pytest tests/
 ```
+![Alt Text]()
+
 ## Tests include:
 -Email parsing
 -Rule evaluation
