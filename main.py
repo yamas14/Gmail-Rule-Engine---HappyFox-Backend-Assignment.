@@ -2,7 +2,7 @@ from gmail_client import GmailClient
 from models import Session, Email
 from rule_processor import RuleProcessor
 
-def sync_emails():
+def sync_emails(): # Fetch new emails and skip existing ones to avoid duplicates
     gmail_client = GmailClient()
     session = Session()
     
@@ -26,7 +26,7 @@ def sync_emails():
     print(f"Saved {len(new_emails)} new emails. {len(emails) - len(new_emails)} duplicates skipped.\n")
     session.close()
 
-def process_rules():
+def process_rules(): # Track rule matches and actions for reporting
     gmail_client = GmailClient()
     rule_processor = RuleProcessor('rules.json')
     session = Session()
