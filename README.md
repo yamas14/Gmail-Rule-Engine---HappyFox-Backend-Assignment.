@@ -138,7 +138,7 @@ happyfox-backend/
 ├── token.pkl
 ├── credentials.json (ignored via .gitignore)
 ├── tests/
-│   └── test_rule_processor.py
+│   └── test_rule_processor.py/test_gmail_client.py/test_main.py/test_models.py
 ```
 
 
