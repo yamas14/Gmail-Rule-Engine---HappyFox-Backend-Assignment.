@@ -122,7 +122,8 @@ pytest tests/
 -DB insertions
 
 ### 9. SnapShots
-1[Alt Text](https://github.com/yamas14/Gmail-Rule-Engine-HappyFox-Backend-Assignment/blob/7f1d69994f34d1afb19a99ed75ff3aecdc466df4/Screenshot%202025-06-19%20030045.png)
+![Alt Text](https://github.com/yamas14/Gmail-Rule-Engine-HappyFox-Backend-Assignment/blob/7f1d69994f34d1afb19a99ed75ff3aecdc466df4/Screenshot%202025-06-19%20030045.png)
+![Alt Text](https://github.com/yamas14/Gmail-Rule-Engine-HappyFox-Backend-Assignment/blob/06bdf38574dd7842acf6bdcd6a13914cc11b7a2a/Screenshot%202025-06-19%20025914.png)
 
 
 ### 10. Demo Video
