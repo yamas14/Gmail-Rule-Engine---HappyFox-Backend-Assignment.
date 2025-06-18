@@ -114,7 +114,7 @@ mark_as_read, mark_as_unread, move_message
 ```bash
 pytest tests/
 ```
-![Alt Text]()
+![Alt Text](https://github.com/yamas14/Gmail-Rule-Engine-HappyFox-Backend-Assignment/blob/1b6f22ab9a51d28ee77444e9f35c929e66d0658e/Screenshot%202025-06-19%20025433.png)
 
 ## Tests include:
 -Email parsing
