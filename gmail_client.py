@@ -13,7 +13,7 @@ from threading import Lock
 import re
 
 class GmailClient:
-    def __init__(self):
+    def __init__(self): # Rate limiting to stay within Gmail API quotas
         self.service = self._get_gmail_service()
         self.rate_limit_lock = Lock()
         self.api_calls = 0
