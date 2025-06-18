@@ -1,0 +1,141 @@
+{
+  "rules": [
+    {
+      "predicate": "any",
+      "conditions": [
+        {
+          "field": "from_address",
+          "predicate": "contains",
+          "value": "linkedin.com"
+        },
+        {
+          "field": "from_address",
+          "predicate": "contains",
+          "value": "marketing@"
+        },
+        {
+          "field": "subject",
+          "predicate": "contains",
+          "value": "lottery winner"
+        }
+      ],
+      "actions": [
+        {
+          "type": "move_message",
+          "label": "Spam-like"
+        }
+      ]
+    },
+    {
+      "predicate": "all",
+      "conditions": [
+        {
+          "field": "from_address",
+          "predicate": "contains",
+          "value": "avinas"
+        },
+        {
+          "field": "subject",
+          "predicate": "contains",
+          "value": "HappyFox"
+        }
+      ],
+      "actions": [
+        {
+          "type": "move_message",
+          "label": "HappyFox"
+        }
+      ]
+    },
+    {
+      "predicate": "all",
+      "conditions": [
+        {
+          "field": "from_address",
+          "predicate": "contains",
+          "value": "saisamay5@gmail.com"
+        }
+      ],
+      "actions": [
+        {
+          "type": "mark_as_read"
+        },
+        {
+          "type": "move_message",
+          "label": "Spam"
+        }
+      ]
+    },
+    {
+      "predicate": "all",
+      "conditions": [
+        {
+          "field": "from_address",
+          "predicate": "contains",
+          "value": "1by22ai086@bmsit.in"
+        }
+      ],
+      "actions": [
+        {
+          "type": "mark_as_read"
+        },
+        {
+          "type": "move_message",
+          "label": "INBOX"
+        }
+      ]
+    },
+    {
+      "predicate": "all",
+      "conditions": [
+        {
+          "field": "from_address",
+          "predicate": "contains",
+          "value": "mummigatti"
+        }
+      ],
+      "actions": [
+        {
+          "type": "mark_as_read"
+        }
+      ]
+    },
+    {
+      "predicate": "all",
+      "conditions": [
+        {
+          "field": "from_address",
+          "predicate": "contains",
+          "value": "linkedin.com"
+        }
+      ],
+      "actions": [
+        {
+          "type": "move_message",
+          "label": "LinkedIn"
+        }
+      ]
+    },
+    {
+      "predicate": "all",
+      "conditions": [
+        {
+          "field": "from_address",
+          "predicate": "contains",
+          "value": "security"
+        },
+        {
+          "field": "subject",
+          "predicate": "contains",
+          "value": "alert"
+        }
+      ],
+      "actions": [
+        {
+          "type": "move_message",
+          "label": "Security"
+        }
+      ]
+    }
+  ]
+}
