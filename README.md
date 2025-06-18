@@ -124,6 +124,9 @@ pytest tests/
 
 ### 10. Demo Video
 
+👉 [Click here to watch the demo](https://drive.google.com/file/d/12b245yowZ62F6O8EfyMbS0Fw99qOQIRj/view?usp=sharing)
+
+
 
 ### 11. Folder Structure
 ```pgsql
